@@ -1,0 +1,98 @@
+:root {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', monospace;
+  --radius: 6px;
+
+  --text-primary:   #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted:     #999999;
+  --text-disabled:  #bbbbbb;
+
+  --surface-0: #f2f2f2;
+  --surface-1: #f8f8f8;
+  --surface-2: #ffffff;
+
+  --border:        rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.22);
+
+  --text-accent:   #1d4ed8;
+  --bg-accent:     #eff6ff;
+  --border-accent: #bfdbfe;
+  --fill-accent:   #3b82f6;
+  --on-accent:     #ffffff;
+
+  --text-success:   #15803d;
+  --bg-success:     #f0fdf4;
+  --border-success: #86efac;
+
+  --text-warning:   #92400e;
+  --bg-warning:     #fffbeb;
+  --border-warning: #fde68a;
+
+  --text-danger:   #dc2626;
+  --bg-danger:     #fef2f2;
+  --border-danger: #fca5a5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary:   #eeeeee;
+    --text-secondary: #aaaaaa;
+    --text-muted:     #666666;
+    --text-disabled:  #444444;
+
+    --surface-0: #111111;
+    --surface-1: #1c1c1c;
+    --surface-2: #262626;
+
+    --border:        rgba(255, 255, 255, 0.10);
+    --border-strong: rgba(255, 255, 255, 0.20);
+
+    --text-accent:   #60a5fa;
+    --bg-accent:     #1e3554;
+    --border-accent: #2563eb;
+    --fill-accent:   #2563eb;
+    --on-accent:     #ffffff;
+
+    --text-success:   #4ade80;
+    --bg-success:     #052e16;
+    --border-success: #166534;
+
+    --text-warning:   #fbbf24;
+    --bg-warning:     #1c1003;
+    --border-warning: #854d0e;
+
+    --text-danger:   #f87171;
+    --bg-danger:     #1c0404;
+    --border-danger: #7f1d1d;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--surface-0);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, button, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0.5;
+}
